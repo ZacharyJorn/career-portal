@@ -122,6 +122,8 @@ export class JobDetailsComponent implements OnInit {
       this.meta.updateTag({ name: 'og:description', content: this.job.publicDescription});
       this.meta.updateTag({ name: 'twitter:description', content: this.job.publicDescription});
       this.meta.updateTag({ name: 'description', content: this.job.publicDescription});
+      this.getRelatedJobs();
+      console.log(`related: `, this.relatedJobs);
       this.loading = false;
     } else {
       this.serverResponse.setNotFound();
