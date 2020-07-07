@@ -47,6 +47,7 @@
             <button theme="primary" *ngIf="alreadyApplied" disabled="true">{{ 'ALREADY_APPLIED' | translate }}</button>
             <button theme="icon" icon="email" (click)="emailLink()" *ngIf="showShareButtons"></button>
             <button theme="icon" icon="twitter" (click)="shareTwitter()" *ngIf="showShareButtons"></button>
+            <button theme="icon" icon="twitter" (click)="shareTwitter()" *ngIf="showShareButtons"></button>
             <button theme="icon" icon="facebook" (click)="shareFacebook()" *ngIf="showShareButtons"></button>
             <button theme="icon" icon="linkedin" (click)="shareLinkedin()" *ngIf="showShareButtons"></button>
             <button theme="dialogue" icon="share" (click)="toggleShareButtons()" *ngIf="!showShareButtons">{{ 'SHARE_POST' | translate }}</button>
